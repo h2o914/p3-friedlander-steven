@@ -18,6 +18,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -55,16 +56,14 @@ nav {
   width: 100%;
   min-width: 600px;
   max-width: 1800px;
-  position: fixed;
+  text-align: right;
 }
 
 nav ul, nav ul li, nav ul li a {
   display: inline;
   list-style-type: none;
   text-decoration: none;
-  display: block;
   color: white;
-  float: right;
   margin-right: 0px;
   padding: 5px;
   font-size: 18px;
@@ -73,11 +72,25 @@ nav ul, nav ul li, nav ul li a {
 
 }
 
-.landing {
-  background-image: url("image/landingphoto.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+section.top-hero-image {
+    position: relative;
+}
+
+.landing img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.landing-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portrait {
@@ -87,20 +100,26 @@ nav ul, nav ul li, nav ul li a {
   z-index: 2;
 }
 
-.bw-profile {
-  background-color: #ffffff;
-  background-image: url("image/bw-profile.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right;
-  background-size: contain;
-}
 
 /*=================
 
 About Page Styling
 
 ==================*/
+
+.bw-profile {
+  width: 100%;
+  position: fixed;
+}
+
+.about-text-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 435px;
+  }
 
 .about {
   font-size: 48px;
@@ -116,3 +135,48 @@ About Page Styling
    margin: 50px 450px;
    text-align: left;
  }
+ /*==================
+
+ Contact Page Styling
+
+ ===================*/
+
+ .bridge {
+   background-image: url("image/bridge.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   margin-top: 160px;
+ }
+
+ footer {
+   display: inline;
+ }
+
+ .fa {
+  padding: 5px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 4px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #8cd298;
+}
+
+.fa-facebook {
+  background: white;
+  color: black;
+}
+
+.fa-twitter {
+  background: white;
+  color: black;
+}
+
+.fa-instagram {
+  background: white;
+  color: black;
+}
