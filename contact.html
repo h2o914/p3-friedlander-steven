@@ -35,33 +35,35 @@
         <img src="image/bridge.jpg" alt="Sunshine Skyway Bridge" title="Sunshine Skyway Bridge">
       </section>
 
-      <section class="section-bottom"></section>
+
+
 
         <div class="container">
-          <sections class="contact-form">
-            <form class="contact-steve" id="test_form" name="test_form" method="POST" action="form.php"
+          <section class="contact-form">
+            <h3>Have a question or comment?</h3>
+            <form class="contact-steve" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
             onsubmit="return validateForm(this)">
-        <div class="name">
-          <label for="name" class="label_input_wrap">Name</label>
-          <input type="text" name="req_name" placeholder="Name" id="name" />
-        </div>
+              <div class="name">
+                <label for="name" class="label_input_wrap">Name</label>
+                <input type="text" name="req_name" placeholder="Your Name" id="name" />
+              </div>
 
-        <div class="email">
-          <label for="email" class="label_input_wrap">Email</label>
-          <input type="email" name="req_email" placeholder="email" id="email" />
-        </div>
+              <div class="email">
+                <label for="email" class="label_input_wrap">Email</label>
+                <input type="email" name="req_email" placeholder="Your Email" id="email" />
+              </div>
 
-        <div class="message">
-          <label for="message" class="label_input_wrap">Message</label>
-          <textarea name="message" maxlength="1000" cols="50" rows="20" placeholder="Message" id="Message"></textarea>
-        </div>
+              <div class="message">
+                <label for="message" class="label_input_wrap">Message</label>
+                <textarea name="message" maxlength="1000" cols="60" rows="10" placeholder="How Can We Help You?" id="Message"></textarea>
+              </div>
 
-        <div class="submit">
-          <input type="submit" value="Send">
-        </div>
+              <div class="submit">
+                <input type="submit" value="Send">
+              </div>
 
-      </form>
-      
+            </form>
+
     </main>
 
       <footer>
