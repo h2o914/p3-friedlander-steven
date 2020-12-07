@@ -16,10 +16,10 @@
 
 
         <ul>
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="portfolio.html">portfolio</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="index.html">home</a></li>
+          <li><a href="index.html" class="links">home</a></li>
+          <li><a href="about.html" class="links">about</a></li>
+          <li><a href="portfolio.html" class="links">portfolio</a></li>
+          <li><a href="contact.html" class="links">contact</a></li>
         </ul>
       </nav>
 
@@ -35,14 +35,12 @@
         <img src="image/bridge.jpg" alt="Sunshine Skyway Bridge" title="Sunshine Skyway Bridge">
       </section>
 
-
-
-
         <div class="container">
           <section class="contact-form">
             <h3>Have a question or comment?</h3>
-            <form class="contact-steve" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
-            onsubmit="return validateForm(this)">
+            <p>We would love to hear from you!</p>
+            <p>Send us a message and we will reply within one business day!</p>
+            <form class="contact-steve" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
               <div class="name">
                 <label for="name" class="label_input_wrap">Name</label>
                 <input type="text" name="req_name" placeholder="Your Name" id="name" />

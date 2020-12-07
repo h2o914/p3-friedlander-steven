@@ -6,6 +6,14 @@
     box-sizing: border-box;
   }
 
+  h1 {
+   font-size: 36px;
+ }
+
+ p {
+   font-size: 18px;
+ }
+
   header {
     width: 100%;
     background: #2f3941;
@@ -33,6 +41,17 @@
     font-weight: normal;
     font-family: 'Commissioner', sans-serif;
   }
+
+  .container {
+    font-family: Commissioner, sans-serif;
+    margin: 250px 0px 0px 0px;
+    text-align: center;
+  }
+
+  p {
+    padding: 20px 0px 0px 0px;
+  }
+  
 </style>
 
 <header>
@@ -49,5 +68,4 @@
 <div class="container">
   <h1>Thank you for your inquiry</h1>
   <p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p>
-  <p>Form processor provided by <a href="http://www.inventpartners.com">Invent Partners web design York</a>.</p>
 </div>
