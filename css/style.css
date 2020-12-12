@@ -51,6 +51,15 @@ p {
   margin: 10px 500px;
   text-align: center;
 }
+
+.portrait img {
+    width: 175px;
+}
+
+.portrait img:hover {
+  width:200px;
+  transition: 1s;
+}
 /*==================
 
 Home Page Styling
@@ -104,6 +113,8 @@ section.top-hero-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #8cd298;
 }
 
 .portrait {
@@ -141,6 +152,7 @@ About Page Styling
   text-align: center;
   color: #8cd298;
   margin-top: 30px;
+  text-shadow: 5px 5px 5px #666666;
 }
  .about-text {
    font-size: 24px;
@@ -149,6 +161,36 @@ About Page Styling
    margin: 50px 450px;
    text-align: left;
  }
+
+
+ /*==================
+
+ Portfolia Page Styling
+
+ ===================*/
+
+ section.portfolio img {
+   width: 400px;
+   margin: 80px 0px 300px 0px;
+   display: inline-block;
+   max-height: 560px;
+   padding: 0px 25px;
+ }
+
+ .portfolio h3 {
+   margin-top: 175px;
+   padding-top: 50px;
+   color: white;
+ }
+
+ .portfolio {
+   background: black;
+   text-align: center;
+   max
+ }
+
+
+
  /*==================
 
  Contact Page Styling
@@ -157,10 +199,6 @@ About Page Styling
 
 .links:first-child:before {
     content: " » ";
-}
-
-.links:after {
-    content: " :";
 }
 
  .bridge img {
