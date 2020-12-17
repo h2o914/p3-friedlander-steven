@@ -52,6 +52,11 @@ p {
   text-align: center;
 }
 
+a:hover {
+    opacity: 0.7;
+    color: #8cd298;
+}
+
 .portrait img {
     width: 175px;
 }
@@ -60,6 +65,7 @@ p {
   width:200px;
   transition: 1s;
 }
+
 /*==================
 
 Home Page Styling
@@ -102,6 +108,7 @@ section.top-hero-image {
     width: 100%;
     max-height: 100vh;
     object-fit: cover;
+    vertical-align: middle
 }
 
 .landing-logo {
@@ -114,6 +121,7 @@ section.top-hero-image {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+
     text-shadow: 5px 5px 5px #8cd298;
 }
 
@@ -122,8 +130,10 @@ section.top-hero-image {
   top: 20px;
   left: 20px;
   z-index: 2;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
-
 
 /*=================
 
@@ -131,10 +141,15 @@ About Page Styling
 
 ==================*/
 
-.bw-profile img {
-    width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
+.bw-profile {
+  background-image: url(../image/bw-profile.png);
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
 }
 
 .about-text-container {
@@ -162,6 +177,9 @@ About Page Styling
    text-align: left;
  }
 
+ footer {
+   clear: both;
+ }
 
  /*==================
 
@@ -169,12 +187,17 @@ About Page Styling
 
  ===================*/
 
- section.portfolio img {
-   width: 400px;
-   margin: 80px 0px 300px 0px;
-   display: inline-block;
+.portfolio-background {
+  background-color: black;
+}
+ .portfolio img {
+   background-color: black;
+   width: 19%;
+   padding: 25px;
    max-height: 560px;
-   padding: 0px 25px;
+   max-width: 400px;
+   vertical-align: text-top;
+
  }
 
  .portfolio h3 {
@@ -184,12 +207,13 @@ About Page Styling
  }
 
  .portfolio {
-   background: black;
+   background-color: black;
    text-align: center;
-   max
  }
 
-
+.portfolio-footer {
+  background-color: white;
+}
 
  /*==================
 
@@ -244,6 +268,7 @@ About Page Styling
   color: #2f3941;
   font-size: 18px;
   padding: 4px 35px;
+  border-radius: 3px;
 }
 
  footer ul li {
@@ -282,4 +307,39 @@ About Page Styling
 .fa-instagram {
   background: white;
   color: black;
+}
+
+/*=================
+
+Float and Clear Page
+
+==================*/
+
+.float-header {
+  width: 100%;
+  background: #2f3941;
+  padding: 15px;
+  top: 0;
+  position: fixed;
+  text-align: center;
+}
+
+.turtle {
+  float: right;
+  margin-top: 170px;
+  padding-right: 20px;
+}
+
+.float-text {
+  clear:right;
+  text-align: left;
+}
+
+@keyframes move {
+  from {
+    transform: translatex(-250px);
+  }
+  to {
+     transform: translateX(20px);
+  }
 }
